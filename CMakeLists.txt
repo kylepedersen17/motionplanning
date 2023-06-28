@@ -4,4 +4,6 @@ project(motion_planning)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(motion_planning main.cpp)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+add_executable(motion_planning src/main.cpp src/map.cpp)

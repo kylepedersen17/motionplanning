@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/kylepedersen/Desktop/motion_planning/main.cpp
+/Users/kylepedersen/Desktop/motion_planning/include/map.h
+vector
+-
+
+/Users/kylepedersen/Desktop/motion_planning/src/main.cpp
 iostream
 -
+../include/map.h
+/Users/kylepedersen/Desktop/motion_planning/include/map.h
 

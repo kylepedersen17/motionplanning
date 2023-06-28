@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/kylepedersen/Desktop/motion_planning/build",
-  "command": "/usr/bin/clang++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=gnu++14 -o CMakeFiles/motion_planning.dir/main.cpp.o -c /Users/kylepedersen/Desktop/motion_planning/main.cpp",
-  "file": "/Users/kylepedersen/Desktop/motion_planning/main.cpp"
-}
-]
