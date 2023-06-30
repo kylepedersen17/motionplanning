@@ -60,42 +60,57 @@ include CMakeFiles/motion_planning.dir/flags.make
 CMakeFiles/motion_planning.dir/src/main.cpp.o: CMakeFiles/motion_planning.dir/flags.make
 CMakeFiles/motion_planning.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylepedersen/Desktop/motion_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motion_planning.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motion_planning.dir/src/main.cpp.o -c /Users/kylepedersen/Desktop/motion_planning/src/main.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motion_planning.dir/src/main.cpp.o -c /Users/kylepedersen/Desktop/motion_planning/src/main.cpp
 
 CMakeFiles/motion_planning.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motion_planning.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylepedersen/Desktop/motion_planning/src/main.cpp > CMakeFiles/motion_planning.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylepedersen/Desktop/motion_planning/src/main.cpp > CMakeFiles/motion_planning.dir/src/main.cpp.i
 
 CMakeFiles/motion_planning.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motion_planning.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylepedersen/Desktop/motion_planning/src/main.cpp -o CMakeFiles/motion_planning.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylepedersen/Desktop/motion_planning/src/main.cpp -o CMakeFiles/motion_planning.dir/src/main.cpp.s
 
 CMakeFiles/motion_planning.dir/src/map.cpp.o: CMakeFiles/motion_planning.dir/flags.make
 CMakeFiles/motion_planning.dir/src/map.cpp.o: ../src/map.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylepedersen/Desktop/motion_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motion_planning.dir/src/map.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motion_planning.dir/src/map.cpp.o -c /Users/kylepedersen/Desktop/motion_planning/src/map.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motion_planning.dir/src/map.cpp.o -c /Users/kylepedersen/Desktop/motion_planning/src/map.cpp
 
 CMakeFiles/motion_planning.dir/src/map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motion_planning.dir/src/map.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylepedersen/Desktop/motion_planning/src/map.cpp > CMakeFiles/motion_planning.dir/src/map.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylepedersen/Desktop/motion_planning/src/map.cpp > CMakeFiles/motion_planning.dir/src/map.cpp.i
 
 CMakeFiles/motion_planning.dir/src/map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motion_planning.dir/src/map.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylepedersen/Desktop/motion_planning/src/map.cpp -o CMakeFiles/motion_planning.dir/src/map.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylepedersen/Desktop/motion_planning/src/map.cpp -o CMakeFiles/motion_planning.dir/src/map.cpp.s
+
+CMakeFiles/motion_planning.dir/src/astar.cpp.o: CMakeFiles/motion_planning.dir/flags.make
+CMakeFiles/motion_planning.dir/src/astar.cpp.o: ../src/astar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylepedersen/Desktop/motion_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/motion_planning.dir/src/astar.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motion_planning.dir/src/astar.cpp.o -c /Users/kylepedersen/Desktop/motion_planning/src/astar.cpp
+
+CMakeFiles/motion_planning.dir/src/astar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motion_planning.dir/src/astar.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylepedersen/Desktop/motion_planning/src/astar.cpp > CMakeFiles/motion_planning.dir/src/astar.cpp.i
+
+CMakeFiles/motion_planning.dir/src/astar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motion_planning.dir/src/astar.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylepedersen/Desktop/motion_planning/src/astar.cpp -o CMakeFiles/motion_planning.dir/src/astar.cpp.s
 
 # Object files for target motion_planning
 motion_planning_OBJECTS = \
 "CMakeFiles/motion_planning.dir/src/main.cpp.o" \
-"CMakeFiles/motion_planning.dir/src/map.cpp.o"
+"CMakeFiles/motion_planning.dir/src/map.cpp.o" \
+"CMakeFiles/motion_planning.dir/src/astar.cpp.o"
 
 # External object files for target motion_planning
 motion_planning_EXTERNAL_OBJECTS =
 
 motion_planning: CMakeFiles/motion_planning.dir/src/main.cpp.o
 motion_planning: CMakeFiles/motion_planning.dir/src/map.cpp.o
+motion_planning: CMakeFiles/motion_planning.dir/src/astar.cpp.o
 motion_planning: CMakeFiles/motion_planning.dir/build.make
 motion_planning: CMakeFiles/motion_planning.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kylepedersen/Desktop/motion_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable motion_planning"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kylepedersen/Desktop/motion_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable motion_planning"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motion_planning.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

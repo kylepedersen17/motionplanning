@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/Users/kylepedersen/Desktop/motion_planning/include/astar.h
+map.h
+/Users/kylepedersen/Desktop/motion_planning/include/map.h
+
 /Users/kylepedersen/Desktop/motion_planning/include/map.h
 vector
 -
 
-/Users/kylepedersen/Desktop/motion_planning/src/main.cpp
+/Users/kylepedersen/Desktop/motion_planning/src/astar.cpp
 iostream
 -
-../include/map.h
-/Users/kylepedersen/Desktop/motion_planning/include/map.h
+../include/astar.h
+/Users/kylepedersen/Desktop/motion_planning/include/astar.h
 

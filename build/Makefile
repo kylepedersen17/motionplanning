@@ -123,6 +123,33 @@ motion_planning/fast:
 	$(MAKE) -f CMakeFiles/motion_planning.dir/build.make CMakeFiles/motion_planning.dir/build
 .PHONY : motion_planning/fast
 
+src/astar.o: src/astar.cpp.o
+
+.PHONY : src/astar.o
+
+# target to build an object file
+src/astar.cpp.o:
+	$(MAKE) -f CMakeFiles/motion_planning.dir/build.make CMakeFiles/motion_planning.dir/src/astar.cpp.o
+.PHONY : src/astar.cpp.o
+
+src/astar.i: src/astar.cpp.i
+
+.PHONY : src/astar.i
+
+# target to preprocess a source file
+src/astar.cpp.i:
+	$(MAKE) -f CMakeFiles/motion_planning.dir/build.make CMakeFiles/motion_planning.dir/src/astar.cpp.i
+.PHONY : src/astar.cpp.i
+
+src/astar.s: src/astar.cpp.s
+
+.PHONY : src/astar.s
+
+# target to generate assembly for a file
+src/astar.cpp.s:
+	$(MAKE) -f CMakeFiles/motion_planning.dir/build.make CMakeFiles/motion_planning.dir/src/astar.cpp.s
+.PHONY : src/astar.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... motion_planning"
+	@echo "... src/astar.o"
+	@echo "... src/astar.i"
+	@echo "... src/astar.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
