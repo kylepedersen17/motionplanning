@@ -17,12 +17,14 @@ int main() {
     AStar astar;
     std::vector<Node*> path = astar.runAStar(map, startX, startY, goalX, goalY);
 
-    std::cout << "Node: x=" << path[0]->x << ", y=" << path[0]->y << std::endl;
+    for (const auto& node : path) {
+        std::cout << "Node: x=" << node->x << ", y=" << node->y << std::endl;
+    }
 
     for (Node* node : path) {
         delete node;
     }
-    
+
     path.clear();
 
 }
