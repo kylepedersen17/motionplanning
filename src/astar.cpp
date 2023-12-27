@@ -2,18 +2,23 @@
 #include <iostream>
 #include "../include/astar.h"
 
-AStar::AStar() {}
 
-std::vector<Node*> AStar::runAStar(const Map& map, int startX, int startY, int goalX, int goalY) {
+std::vector<std::unique_ptr<Node>> AStar::runAStar(Map& map, int startX, int startY, int goalX, int goalY) {
+
     std::cout << "running astar" << "\n";
 
-    Node* node1 = new Node(6, 5);
-    Node* node2 = new Node(7, 8);
-    node2->cameFrom = node1;
+    std::cout << "--------------------------------" << "\n";
+    map.printMap();
+    std::cout << "--------------------------------" << "\n";
 
-    std::vector<Node*> path;
-    path.push_back(node1);
-    path.push_back(node2);
+    
+    std::unique_ptr<Node> node1 = std::make_unique<Node>(6, 5);
+    std::unique_ptr<Node> node2 = std::make_unique<Node>(7, 99);
+
+
+    std::vector<std::unique_ptr<Node>> path;
+    path.push_back(std::move(node1));
+    path.push_back(std::move(node2));
 
     return path;
 }

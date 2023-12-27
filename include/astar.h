@@ -7,25 +7,20 @@ struct Node {
     int y;
     double gScore;
     double fScore;
-    Node* cameFrom;
+    std::unique_ptr<Node> prev;
 
     Node(int x1, int y1) {
         x = x1;
         y = y1;
-        gScore =0.0;
+        gScore = 0.0;
         fScore = 0.0;
-        cameFrom = nullptr;
+        prev = nullptr;
     }
 };
 
 class AStar {
 public:
-    AStar();
+    std::vector<std::unique_ptr<Node>> runAStar(Map& map, int startX, int startY, int goalX, int goalY);
 
-    std::vector<Node*> runAStar(const Map& map, int startX, int startY, int goalX, int goalY);
-
-private:
-    double calculateHeuristic(int x1, int y1, int x2, int y2);
-    std::vector<Node*> reconstructPath(Node* goalNode);
 };
 
