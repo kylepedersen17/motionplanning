@@ -105,3 +105,16 @@ std::pair<int, int> Map::decodeHash(int hash) {
         return std::make_pair(x, y);
 }
 
+void Map::printAdjacencyList(Map& map, std::unordered_map<int, std::vector<int>>& adjacencyList) {
+    for (const auto& pair : adjacencyList) {
+            auto [nodeX, nodeY] = map.decodeHash(pair.first); // Decode the node hash
+            std::cout << "Node (" << nodeX << ", " << nodeY << ") has neighbors: ";
+
+            for (int neighborHash : pair.second) {
+                auto [neighborX, neighborY] = map.decodeHash(neighborHash); // Decode each neighbor hash
+                std::cout << "(" << neighborX << ", " << neighborY << ") ";
+            }
+            std::cout << std::endl;
+    }
+}
+

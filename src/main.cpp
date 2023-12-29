@@ -19,25 +19,15 @@ int main() {
     map.setObstacle(0, 3);
 
     map.printMap();
+
     std::unordered_map<int, std::vector<int>> adjacencyList = map.makeAdjacencyList();
+    
+    BFS bfs;
+    std::vector<std::pair<int, int>> path = bfs.runBFS(map, adjacencyList, map.getStart(), map.getGoal());
 
-    for (const auto& pair : adjacencyList) {
-            auto [nodeX, nodeY] = map.decodeHash(pair.first); // Decode the node hash
-            std::cout << "Node (" << nodeX << ", " << nodeY << ") has neighbors: ";
-
-            for (int neighborHash : pair.second) {
-                auto [neighborX, neighborY] = map.decodeHash(neighborHash); // Decode each neighbor hash
-                std::cout << "(" << neighborX << ", " << neighborY << ") ";
-            }
-            std::cout << std::endl;
+    std::cout << "Path from start to goal: " << std::endl;
+    for (auto step : path) {
+        std::cout << "(" << step.first << ", " << step.second << ") ";
     }
-
-    // int startX = map.getStart().first;
-    // int startY = map.getStart().second;
-    // int goalX = map.getGoal().first;
-    // int goalY = map.getGoal().second;
-
-    // AStar astar;
-    // std::vector<std::unique_ptr<Node>> path = astar.runAStar(map, startX, startY, goalX, goalY);
-
+    std::cout << std::endl;
 }

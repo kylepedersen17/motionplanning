@@ -23,4 +23,7 @@ public:
     int encodeHash(int x, int y);
     std::pair<int, int> decodeHash(int hash);
     int getValue(int x, int y);
+
+    void printAdjacencyList(Map& map, std::unordered_map<int, std::vector<int>>& adjacencyList);
+
 };
